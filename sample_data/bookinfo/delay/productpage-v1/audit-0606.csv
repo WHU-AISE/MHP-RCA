@@ -1,0 +1,9 @@
+"@timestamp","process.executable","process.args",message,"kubernetes.namespace","kubernetes.labels.version","kubernetes.labels.app","event.type","event.dataset","event.category","event.action","process.name"
+"2023-06-28 03:25:11","/usr/bin/socat","/usr/bin/socat, -, TCP4:localhost:9090","Process socat (PID: 15375) by user root STARTED",default,v1,reviews,start,process,process,"process_started",socat
+"2023-06-28 03:15:04","/usr/bin/socat","/usr/bin/socat, -, TCP4:localhost:3000","Process socat (PID: 50448) by user root STOPPED",default,v1,ratings,end,process,process,"process_stopped",socat
+"2023-06-28 03:13:26","/usr/bin/socat","/usr/bin/socat, -, TCP4:localhost:3000","Process socat (PID: 90575) by user root STARTED",default,v1,reviews,start,process,process,"process_started",socat
+"2023-06-28 03:13:26","/usr/bin/socat","/usr/bin/socat, -, TCP4:localhost:3000","Process socat (PID: 90578) by user root STARTED",default,v1,reviews,start,process,process,"process_started",socat
+"2023-06-28 03:13:26","/usr/bin/socat","/usr/bin/socat, -, TCP4:localhost:3000","Process socat (PID: 88240) by user root STOPPED",default,v1,reviews,end,process,process,"process_stopped",socat
+"2023-06-28 03:13:26","/usr/bin/socat","/usr/bin/socat, -, TCP4:localhost:3000","Process socat (PID: 89874) by user root STOPPED",default,v1,reviews,end,process,process,"process_stopped",socat
+"2023-06-28 03:13:15","/usr/bin/socat","/usr/bin/socat, -, TCP4:localhost:3000","Process socat (PID: 85830) by user root STOPPED",default,v1,details,end,process,process,"process_stopped",socat
+"2023-06-28 03:11:15","/usr/bin/socat","/usr/bin/socat, -, TCP4:localhost:3000","Process socat (PID: 70859) by user root STARTED",default,v1,details,start,process,process,"process_started",socat

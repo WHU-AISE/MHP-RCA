@@ -1,0 +1,7 @@
+"@timestamp","process.args","kubernetes.labels.app","kubernetes.pod.name"
+"2023-08-23 04:15:11","runc, --version",cartservice,"cartservice-6969c94d94-l66mx"
+"2023-08-23 04:15:11","runc, --version",cartservice,"cartservice-6969c94d94-l66mx"
+"2023-08-23 04:07:05","runc, --version",checkoutservice,"checkoutservice-6d6f4d7cc7-jkzgt"
+"2023-08-23 04:03:36","/usr/bin/containerd-shim-runc-v2, -namespace, moby, -id, f27d8ed7e0341a5b89f77b6128d65e569f02a7e11ca17942879f564f42b45a0f, -address, /var/run/desktop-containerd/containerd.sock",emailservice,"emailservice-9f8578d69-r6rx8"
+"2023-08-23 04:03:11","runc, init",paymentservice,"paymentservice-78549bfd9c-h8tg5"
+"2023-08-23 04:03:11","/usr/bin/containerd-shim-runc-v2, -namespace, moby, -id, 837aefcd3579068d4008f2a677187022cf287516260de98af6ce460cacff6208, -address, /var/run/desktop-containerd/containerd.sock",paymentservice,"paymentservice-78549bfd9c-h8tg5"

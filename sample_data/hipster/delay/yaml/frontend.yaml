@@ -1,0 +1,18 @@
+kind: NetworkChaos
+apiVersion: chaos-mesh.org/v1alpha1
+metadata:
+  namespace: default
+  name: chaos-from
+spec:
+  selector:
+    namespaces:
+      - default
+    labelSelectors:
+      app: frontend
+  mode: all
+  action: delay
+  delay:
+    latency: 5s
+    correlation: '0'
+    jitter: 0ms
+  direction: to

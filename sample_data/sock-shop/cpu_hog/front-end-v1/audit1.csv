@@ -1,0 +1,14 @@
+@timestamp,process.args,kubernetes.labels.app,kubernetes.pod.name
+2023-08-24 14:50:29,"runc, --version",carts,carts-7bbf9dc945-gw8gn
+2023-08-24 14:49:30,"runc, --version",catalogue,catalogue-db-6b55d8cdb7-69crs
+2023-08-24 14:49:30,"runc, --version",catalogue,catalogue-db-6b55d8cdb7-69crs
+2023-08-24 14:49:29,"runc, --version",catalogue,catalogue-db-6b55d8cdb7-69crs
+2023-08-24 14:47:30,"runc, --version",front,front-end-7f5c844b4c-c8gzm
+2023-08-24 14:46:03,"runc, --root, /var/run/docker/runtime-runc/moby, --log, /var/run/desktop-containerd/daemon/io.containerd.runtime.v2.task/moby/42f8cfbc2b7689ba201d715a1e922b3dc47766dd9c0f699d68a052b2ee3e9335/log.json, --log-format, json, exec, --process, /tmp/runc-process3664606255, --detach, --pid-file, /var/run/desktop-containerd/daemon/io.containerd.runtime.v2.task/moby/42f8cfbc2b7689ba201d715a1e922b3dc47766dd9c0f699d68a052b2ee3e9335/b1ca48ccb35662acded298914cc303b5018696bcdc89fc144e560362716f8620.pid, 42f8cfbc2b7689ba201d715a1e922b3dc47766dd9c0f699d68a052b2ee3e9335",payment,payment-c7df5b49-zlcth
+2023-08-24 14:45:18,"/usr/bin/containerd-shim-runc-v2, -namespace, moby, -id, ce21e8c76cfbec23e7385f96224de0d68fdee330ca99dcd9558f349f1cccebf7, -address, /var/run/desktop-containerd/containerd.sock",carts,carts-db-67f744dd5f-jsmnm
+2023-08-24 14:45:06,"/usr/bin/containerd-shim-runc-v2, -namespace, moby, -id, b94a7d491e630353303dc8880778276b047917105902bbd758d2fcc25e5061f8, -address, /var/run/desktop-containerd/containerd.sock",carts,carts-db-67f744dd5f-jsmnm
+2023-08-24 14:43:02,"runc, --root, /var/run/docker/runtime-runc/moby, --log, /var/run/desktop-containerd/daemon/io.containerd.runtime.v2.task/moby/42f8cfbc2b7689ba201d715a1e922b3dc47766dd9c0f699d68a052b2ee3e9335/log.json, --log-format, json, exec, --process, /tmp/runc-process3787949612, --detach, --pid-file, /var/run/desktop-containerd/daemon/io.containerd.runtime.v2.task/moby/42f8cfbc2b7689ba201d715a1e922b3dc47766dd9c0f699d68a052b2ee3e9335/f690aa3a368fb2a88f2bf45c52323c1d930c8e5bf56940adf3fa245fc605ea11.pid, 42f8cfbc2b7689ba201d715a1e922b3dc47766dd9c0f699d68a052b2ee3e9335",shipping,shipping-79c568cddc-jtq95
+2023-08-24 14:43:01,"runc, --version",shipping,shipping-79c568cddc-jtq95
+2023-08-24 14:42:45,"runc, --version",carts,carts-db-67f744dd5f-jsmnm
+2023-08-24 14:42:39,"runc, --version",session,session-db-695f7fd48f-j5twv
+2023-08-24 14:42:28,"runc, --version",queue,queue-master-9fc44d68d-8cx26

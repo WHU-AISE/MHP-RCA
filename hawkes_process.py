@@ -24,7 +24,7 @@ def demo(X ,N_iter=10, window=-1, dt_max=4, p=0.25):
     # Sample from the true model
     S = X
 
-    # S,R = true_model.generate(T=T, keep=True, print_interval=50)
+    S,R = true_model.generate(T=T, keep=True, print_interval=50)
     
     plt.ion()
     # true_figure, _ = true_model.plot(color="#377eb8", T_slice=(0,T))
@@ -37,15 +37,17 @@ def demo(X ,N_iter=10, window=-1, dt_max=4, p=0.25):
     test_model.add_data(S)
 
     # Initialize plots
-    # test_figure, test_handles = test_model.plot(color="#e41a1c", T_slice=(0,T))
-
-
+    try:
+        test_figure, test_handles = test_model.plot(color="#e41a1c", T_slice=(0,T))
+    except:
+        print('No causal graph constructed')
+    
     N_samples = N_iter
     samples = []
     lps = []
     w = np.zeros(shape=(K,K))
     for itr in range(N_samples):
-        # print("Gibbs iteration ", itr)
+        print("Gibbs iteration ", itr)
         test_model.resample_model()
         lps.append(test_model.log_probability())
         samples.append(test_model.copy_sample())
@@ -53,11 +55,13 @@ def demo(X ,N_iter=10, window=-1, dt_max=4, p=0.25):
         # print(test_model.W_effective)
         w = w+test_model.W_effective
         # Update plots
-        # test_model.plot(handles=test_handles)
+        try:
+            test_model.plot(handles=test_handles)
+        except:
+            print('No causal graph constructed')
     # print('=====Final W=====')
     np.set_printoptions(suppress=True)
     # print(w/N_samples)
-
 
     return w/N_samples
 

@@ -1,0 +1,14 @@
+kind: PodChaos
+apiVersion: chaos-mesh.org/v1alpha1
+metadata:
+  namespace: default
+  name: podfailuretest
+spec:
+  selector:
+    namespaces:
+      - default
+    labelSelectors:
+      app: emailservice
+  mode: all
+  action: pod-failure
+  duration: 5s

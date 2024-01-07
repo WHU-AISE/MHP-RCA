@@ -1,0 +1,17 @@
+kind: PodChaos
+apiVersion: chaos-mesh.org/v1alpha1
+metadata:
+  namespace: default
+  name: zzkinjection
+spec:
+  selector:
+    namespaces:
+      - default
+    labelSelectors:
+      app: reviews
+    pods:
+      default:
+        - reviews-v1-777df99c6d-qb45c
+  mode: all
+  value: '20'
+  action: pod-kill

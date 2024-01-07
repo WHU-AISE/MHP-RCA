@@ -1,0 +1,7 @@
+"@timestamp","process.args","kubernetes.labels.app","kubernetes.pod.name"
+"2023-08-24 07:41:03","runc, --version","-","user-db-b8dfb847c-fpzdr"
+"2023-08-24 07:36:39","/usr/bin/containerd-shim-runc-v2, -namespace, moby, -id, d9d0520b1b4eca61a3c02ef305ebc1aa1967bdb8ae906a1bdce5815456ab193f, -address, /var/run/desktop-containerd/containerd.sock","-","catalogue-6479dbb5bd-fgxd7"
+"2023-08-24 07:29:48","runc, --version","-","carts-db-67f744dd5f-jsmnm"
+"2023-08-24 07:29:34","runc, --version","-","orders-db-b76d8c54c-b828w"
+"2023-08-24 07:29:31","runc, --version","-","catalogue-6479dbb5bd-fgxd7"
+"2023-08-24 07:29:31","runc, --version","-","catalogue-6479dbb5bd-fgxd7"

@@ -1,0 +1,11 @@
+@timestamp,process.args,kubernetes.labels.app,kubernetes.pod.name
+2023-08-24 07:53:23,"/usr/bin/containerd-shim-runc-v2, -namespace, moby, -id, a1199f39c9f801dc90e00737117595ea2e6a70da49bcb4495390e03f0d1e2d94, -address, /var/run/desktop-containerd/containerd.sock",orders,orders-74f65597c5-hcj9n
+2023-08-24 07:49:00,"runc, --version",user,user-db-b8dfb847c-fpzdr
+2023-08-24 07:48:03,"runc, --version",carts,carts-db-67f744dd5f-jsmnm
+2023-08-24 07:47:49,"runc, --version",queue,queue-master-9fc44d68d-8cx26
+2023-08-24 07:47:34,"runc, --version",queue,queue-master-9fc44d68d-8cx26
+2023-08-24 07:47:34,"runc, --version",queue,queue-master-9fc44d68d-8cx26
+2023-08-24 07:47:34,"runc, --version",queue,queue-master-9fc44d68d-8cx26
+2023-08-24 07:44:56,"/usr/bin/containerd-shim-runc-v2, -namespace, moby, -id, 9f28b1e9697b4515bc6a5301624a87b63df98cd1e2df522d24d037603701958d, -address, /var/run/desktop-containerd/containerd.sock",rabbitmq,rabbitmq-6576689cc9-hrqlj
+2023-08-24 07:44:42,"/usr/bin/containerd-shim-runc-v2, -namespace, moby, -id, d9d0520b1b4eca61a3c02ef305ebc1aa1967bdb8ae906a1bdce5815456ab193f, -address, /var/run/desktop-containerd/containerd.sock",shipping,shipping-79c568cddc-jtq95
+2023-08-24 07:41:03,"runc, --version",user,user-db-b8dfb847c-fpzdr

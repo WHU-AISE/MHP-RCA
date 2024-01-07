@@ -1,0 +1,15 @@
+,source,destination
+0,productpage-v1,details-v1
+1,istio-ingressgateway,productpage-v1
+2,reviews-v2,ratings-v1
+3,reviews-v3,ratings-v1
+4,productpage-v1,reviews-v1
+5,productpage-v1,reviews-v2
+6,productpage-v1,reviews-v3
+7,details,docker-desktop
+8,details,docker-desktop
+9,productpage,docker-desktop
+10,ratings,docker-desktop
+11,reviews,docker-desktop
+12,reviews,docker-desktop
+13,reviews,docker-desktop

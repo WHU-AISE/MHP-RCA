@@ -1,0 +1,17 @@
+kind: StressChaos
+apiVersion: chaos-mesh.org/v1alpha1
+metadata:
+  namespace: default
+  name: mem-ijt
+spec:
+  selector:
+    namespaces:
+      - default
+    labelSelectors:
+      app: shipping
+  mode: all
+  stressors:
+    memory:
+      workers: 10
+      size: 512M
+  duration: 30s

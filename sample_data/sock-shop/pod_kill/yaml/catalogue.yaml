@@ -1,0 +1,13 @@
+kind: PodChaos
+apiVersion: chaos-mesh.org/v1alpha1
+metadata:
+  namespace: default
+  name: hip-pod-kill
+spec:
+  selector:
+    namespaces:
+      - default
+    labelSelectors:
+      app: catalogue
+  mode: all
+  action: pod-kill

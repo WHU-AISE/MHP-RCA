@@ -10,13 +10,11 @@ from causallearn.search.ScoreBased.GES import ges
 from causallearn.search.FCMBased import lingam
 import time
 import timeout_decorator
-import discrete_demo_zzk as demo
+import hawkes_process as demo
 
-'''应该没用到'''
 def minmax_norm(df):
     return (df - df.min()) / ( df.max() - df.min())
 
-'''No-used'''
 def norm_csv2df(csv_file_path):
     df = pd.read_csv(csv_file_path)
     df = df.iloc[:,2:]
@@ -119,28 +117,23 @@ def get_adj(X, method):
 
 
 if __name__ == "__main__":
-	root_path  = '/Users/zzk/Developer/rca-data-collector/data/'
-	app = 'sock-shop'
-	chaos_type = 'delay'
+	root_path  = './sample_data/'
+	app = 'bookinfo'
+	chaos_type = 'pod_kill'
 	
-	hipster_pods = ['emailservice','paymentservice','frontend','cartservice','adservice','recommendationservice','currencyservice']
-	
+	bookinfo_pods = ['details','reviews','productpage','ratings']
+	# hipster_pods = ['emailservice','paymentservice','frontend','cartservice','adservice','recommendationservice','currencyservice']
+	# sock_pods = ['front-end','shipping','payment','cart','catalogue','order','user']
 	pod_version = 'v1'
 	app_path = root_path + app + '/'
 	chaos_path = root_path + app + '/'  + chaos_type + '/'
 	yaml_path = root_path + 'yaml/'
 
 	window = -1
-	baselines = ['ges','pc','lgm']
-	for pod_name in sock_pods:
+	for pod_name in bookinfo_pods:
 		pod_path = root_path + app +  '/' + chaos_type  + '/' + pod_name + '-' +pod_version + '/'
-		final_path = pod_path +'/final.csv'
-		# data_path = pod_path +'/data.csv'
-		print(final_path)
-		# ======= hks 1st ========
-		# rc = 'checkoutservice.csv'
+		final_path = pod_path +'final.csv'
 		X2 = pd.read_csv(final_path).tail(window)
-		# X3 = pd.read_csv(data_path).tail(window)
 		X = np.ascontiguousarray(X2)
 		start_hks = time.time()
 		x = demo.demo(X,20,window)
@@ -151,7 +144,4 @@ if __name__ == "__main__":
 		print('========ROOT idx ========'+str(root_causes))
 		num = count_rank(anomaly_score, root_causes)
 		end_hks = time.time()
-		print('-----------------------')
-		print(end_hks - start_hks)
-		print('-----------------------')
-		write_res('hks',pod_path, window, x, anomaly_score, num)
+		print(end_hks-start_hks)

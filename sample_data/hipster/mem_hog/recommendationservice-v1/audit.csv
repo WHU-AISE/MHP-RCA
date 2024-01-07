@@ -1,0 +1,3 @@
+"@timestamp","process.args","kubernetes.labels.app","kubernetes.pod.name"
+"2023-08-22 09:46:45","/usr/bin/containerd-shim-runc-v2, -namespace, moby, -id, baa7931dce8384e1fe911462883eadb6c8bf358b073b70fd52604aacf3c71a34, -address, /var/run/desktop-containerd/containerd.sock",currencyservice,"currencyservice-ccbc788bc-7lbhx"
+"2023-08-22 09:45:04","runc, --version",emailservice,"emailservice-9f8578d69-r6rx8"

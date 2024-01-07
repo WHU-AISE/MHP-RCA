@@ -1,0 +1,16 @@
+kind: StressChaos
+apiVersion: chaos-mesh.org/v1alpha1
+metadata:
+  namespace: default
+  name: cpu-hog
+spec:
+  selector:
+    namespaces:
+      - default
+    labelSelectors:
+      app: reviews
+  mode: all
+  stressors:
+    cpu:
+      workers: 5
+      load: 100

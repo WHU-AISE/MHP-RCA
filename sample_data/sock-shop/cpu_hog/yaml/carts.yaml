@@ -1,0 +1,17 @@
+kind: StressChaos
+apiVersion: chaos-mesh.org/v1alpha1
+metadata:
+  namespace: default
+  name: cpu-hog
+spec:
+  selector:
+    namespaces:
+      - default
+    labelSelectors:
+      app: carts
+  mode: all
+  stressors:
+    cpu:
+      workers: 10
+      load: 100
+  duration: 30s
