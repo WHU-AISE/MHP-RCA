@@ -1,0 +1,1 @@
+locust --config=/Users/zzk/Developer/rca-data-collector/locust/sock-shop/locust.conf --only-summary

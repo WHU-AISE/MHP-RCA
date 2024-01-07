@@ -1,0 +1,1 @@
+locust --config=/Users/zzk/Developer/rca-data-collector/locust/hipster/locust.conf --only-summary

@@ -1,0 +1,1 @@
+locust --config=/Users/zzk/Developer/rca-data-collector/locust/bookinfo/locust.conf --only-summary
