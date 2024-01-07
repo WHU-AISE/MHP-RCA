@@ -1,4 +1,4 @@
-# HPRCA
+# MHP-RCA
 
 ### MHP-RCA: Multivariate Hawkes Process-based Root Cause Analysis in Microservice Systems
 
