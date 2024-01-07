@@ -16,18 +16,8 @@ def demo(X ,N_iter=10, window=-1, dt_max=4, p=0.25):
     print('=====%s==='%str(K))
     
     network_hypers = {"p": p, "allow_self_connections": False}
-    true_model = DiscreteTimeNetworkHawkesModelSpikeAndSlab(
-        K=K, dt_max=dt_max,
-        network_hypers=network_hypers)
-    assert true_model.check_stability()
 
-    # Sample from the true model
     S = X
-
-    S,R = true_model.generate(T=T, keep=True, print_interval=50)
-    
-    plt.ion()
-    # true_figure, _ = true_model.plot(color="#377eb8", T_slice=(0,T))
 
     weight_hypers = {"parallel_resampling":False}
     test_model = DiscreteTimeNetworkHawkesModelSpikeAndSlab(
