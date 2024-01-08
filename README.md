@@ -2,7 +2,7 @@
 
 ### MHP-RCA: Multivariate Hawkes Process-based Root Cause Analysis in Microservice Systems
 
-MHP-RCA is a Hawkes process-based RCA framework that integrate multi-source data.
+MHP-RCA is a Hawkes process-based RCA framework that integrates multi-source data.
 
 ## Environment
 |ENVIRONMENT               |DETAIL                                                                                                                                             |
